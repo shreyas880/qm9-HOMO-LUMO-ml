@@ -1,10 +1,8 @@
 import os
 from rdkit import Chem
-# from rdkit.Chem import AllChem
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-# import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from featurize import featurize
 from sklearn.ensemble import RandomForestRegressor
@@ -95,22 +93,12 @@ r2 = r2_score(y_test, pred)
 print("MAE:", mae)
 print("R2:", r2)
 
-# plt.scatter(y_test, pred, alpha=0.4)
-# plt.xlabel('True HOMO-LUMO Gap')
-# plt.ylabel('Predicted HOMO-LUMO Gap')
-# x, y = [0, 0.45], [0, 0.45]
-# plt.plot(x, y)
-# plt.show()
-
-# print("\nMost influential substructures:\n")
-# for bit, diff, mp, ma, count in bit_effects[:10]:
-
-#     direction = "increases" if diff > 0 else "decreases"
-
-#     print(
-#         f"Bit {bit}: {direction} gap by {abs(diff):.3f} eV "
-#         f"(present={mp:.3f}, absent={ma:.3f}, n={count})"
-#     )
+plt.scatter(y_test, pred, alpha=0.4)
+plt.xlabel('True HOMO-LUMO Gap')
+plt.ylabel('Predicted HOMO-LUMO Gap')
+x, y = [0, 0.45], [0, 0.45]
+plt.plot(x, y)
+plt.show()
 
 gen = rdFingerprintGenerator.GetMorganGenerator(radius=2, fpSize=1024)
 
@@ -161,14 +149,12 @@ for bit, data_list in found.items():
             size=(400,300)
         )
 
-        # img = Draw.MolToImage(mol, highlightAtoms=list(atoms))
-
         path = os.path.join(bit_dir, f"example_{i}.png")
         img.save(path)
 
 for bit in top_bits:
 
-    bit = int(bit)  # ensure scalar integer
+    bit = int(bit)
 
     mask = X[:, bit] == 1
 
