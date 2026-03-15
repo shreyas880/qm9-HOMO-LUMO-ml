@@ -1,0 +1,16 @@
+QM9 HOMO-LUMO Prediction
+
+MAE: 0.008098449098810634
+R2: 0.9333772212746119
+
+Top fingerprint bits influencing gap:
+Bit 356: decrease gap by 0.0539 eV (present=0.2179, absent=0.2718, n=26017)
+Bit 849: decrease gap by 0.0481 eV (present=0.2148, absent=0.2629, n=19872)
+Bit 547: decrease gap by 0.0474 eV (present=0.1975, absent=0.2449, n=1233)
+Bit 803: decrease gap by 0.0472 eV (present=0.1971, absent=0.2444, n=660)
+Bit 428: decrease gap by 0.0436 eV (present=0.2042, absent=0.2478, n=4611)
+Bit 650: decrease gap by 0.0422 eV (present=0.2168, absent=0.2590, n=18038)
+Bit 511: decrease gap by 0.0421 eV (present=0.2042, absent=0.2463, n=2986)
+Bit 726: decrease gap by 0.0418 eV (present=0.2052, absent=0.2470, n=3859)
+Bit 751: decrease gap by 0.0408 eV (present=0.2034, absent=0.2442, n=533)
+Bit 605: decrease gap by 0.0400 eV (present=0.2047, absent=0.2447, n=1153)
