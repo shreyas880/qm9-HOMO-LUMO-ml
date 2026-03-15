@@ -77,6 +77,5 @@ The results show strong predictive performance for this relatively simple model.
   <li>Pandas</li>
   <li>Pyplot</li>
   <li>Scikit learn</li>
-  <li></li>
 </ul>
 </h2>
