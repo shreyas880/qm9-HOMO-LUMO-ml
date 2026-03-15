@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-folder = r"C:\Users\Shreyas\datasets\QM9"
+folder = r"YOUR_FOLDER_PATH"
 
 data = []
 
