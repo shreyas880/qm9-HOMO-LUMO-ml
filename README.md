@@ -1,5 +1,5 @@
 <h1>ML Prediction and Interpretation of HOMO-LUMO Gaps w/ QM9 Dataset</h1>
-![Prediction vs True HOMO-LUMO Gap](model_results/RandomForest.png)
+![Prediction vs True HOMO-LUMO Gap](./model_results/RandomForest.png)
 <!-- <img href=''> -->
 <h2>Overview:</h2>
 <p>
