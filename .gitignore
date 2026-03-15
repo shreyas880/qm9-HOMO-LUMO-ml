@@ -1,0 +1,9 @@
+# model files
+*.pkl
+
+# python cache
+__pycache__/
+*.pyc
+
+# large datasets
+qm9_dataset.csv
